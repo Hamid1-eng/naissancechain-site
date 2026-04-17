@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaissanceChain - Registre numérique des naissances en Guinée</title>
+    <meta name="description" content="NaissanceChain modernise l'enregistrement des naissances en Guinée grâce à un registre numérique sécurisé.">
+    <link rel="canonical" href="/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_GN">
+    <meta property="og:title" content="NaissanceChain - Registre numérique des naissances en Guinée">
+    <meta property="og:description" content="NaissanceChain modernise l'enregistrement des naissances en Guinée grâce à un registre numérique sécurisé.">
+    <meta property="og:url" content="/">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="NaissanceChain - Registre numérique des naissances en Guinée">
+    <meta property="twitter:description" content="NaissanceChain modernise l'enregistrement des naissances en Guinée grâce à un registre numérique sécurisé.">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "NaissanceChain",
+            "description": "Registre numérique sécurisé des naissances pour améliorer l'accès à l'état civil en Guinée.",
+            "areaServed": "GN",
+            "url": "/"
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/naichain.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <button onclick="scrollToSection('hero')" class="nav-logo">
+                    NaissanceChain
+                </button>
+
+                <!-- Desktop Menu -->
+                <div class="nav-menu-desktop">
+                    <button onclick="scrollToSection('hero')" class="nav-link">Accueil</button>
+                    <button onclick="scrollToSection('problem')" class="nav-link">Problème</button>
+                    <button onclick="scrollToSection('solution')" class="nav-link">Solution</button>
+                    <button onclick="scrollToSection('users')" class="nav-link">Utilisateurs</button>
+                    <button onclick="scrollToSection('impact')" class="nav-link">Impact</button>
+                    <button onclick="scrollToSection('mockups')" class="nav-link">Maquettes</button>
+                    <button onclick="scrollToSection('faq')" class="nav-link">FAQ</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="nav-mobile-btn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg id="menu-icon" class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                    <svg id="close-icon" class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="nav-mobile-menu" aria-hidden="true">
+            <div class="nav-mobile-content">
+                <button onclick="scrollToSection('hero')" class="nav-mobile-link">Accueil</button>
+                <button onclick="scrollToSection('problem')" class="nav-mobile-link">Problème</button>
+                <button onclick="scrollToSection('solution')" class="nav-mobile-link">Solution</button>
+                <button onclick="scrollToSection('users')" class="nav-mobile-link">Utilisateurs</button>
+                <button onclick="scrollToSection('impact')" class="nav-mobile-link">Impact</button>
+                <button onclick="scrollToSection('mockups')" class="nav-mobile-link">Maquettes</button>
+                <button onclick="scrollToSection('faq')" class="nav-mobile-link">FAQ</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-text fade-in">
+                <h1 class="hero-title">NaissanceChain</h1>
+                <p class="hero-subtitle">
+                    Un registre numérique sécurisé pour garantir l'identité juridique de chaque enfant en Guinée.
+                </p>
+                <p class="hero-description">
+                    NaissanceChain modernise l'enregistrement des naissances en permettant un accès simple, sécurisé et vérifiable à l'état civil, y compris dans les zones rurales et à faible connectivité.
+                </p>
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('solution')" class="btn-primary">
+                        Découvrir le projet
+                    </button>
+                    <button onclick="scrollToSection('mockups')" class="btn-secondary">
+                        Voir les maquettes
+                    </button>
+                </div>
+            </div>
+            <div class="hero-chevron bounce">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Un défi majeur pour des millions d'enfants</h2>
+                <p class="section-description">
+                    En Guinée, une part importante des naissances n'est pas enregistrée à l'état civil, 
+                    en particulier dans les zones rurales et enclavées. Sans acte de naissance, des millions 
+                    d'enfants n'ont pas accès à l'éducation, aux soins de santé et à leurs droits fondamentaux. 
+                    Cette situation limite également la capacité de l'État à planifier efficacement les 
+                    politiques publiques.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card stat-red slide-up">
+                    <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    <div class="stat-value">58 %</div>
+                    <div class="stat-label">des naissances enregistrées</div>
+                </div>
+
+                <div class="stat-card stat-orange slide-up delay-10">
+                    <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <div class="stat-value">&lt; 40 %</div>
+                    <div class="stat-label">en zones rurales</div>
+                </div>
+
+                <div class="stat-card stat-yellow slide-up delay-20">
+                    <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    <div class="stat-value">1,8M</div>
+                    <div class="stat-label">d'enfants sans acte de naissance</div>
+                </div>
+            </div>
+
+            <p class="sources-note">Sources : UNICEF Guinée (2021–2023), Enquête MICS, ANIES.</p>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Une solution adaptée aux réalités du terrain</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card slide-up">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon icon-blue" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                    </div>
+                    <h3 class="feature-title">Enregistrement sur le terrain</h3>
+                    <p class="feature-description">
+                        Les agents de santé et d'état civil peuvent enregistrer une naissance directement depuis un smartphone ou une tablette, même en l'absence de connexion Internet.
+                    </p>
+                </div>
+
+                <div class="feature-card slide-up delay-15">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon icon-indigo" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="feature-title">Preuve numérique immédiate</h3>
+                    <p class="feature-description">
+                        Chaque naissance génère une preuve numérique sécurisée, identifiable par un identifiant unique et un QR code.
+                    </p>
+                </div>
+
+                <div class="feature-card slide-up delay-30">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-icon icon-purple" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3 class="feature-title">Vérification institutionnelle</h3>
+                    <p class="feature-description">
+                        Les écoles, hôpitaux et administrations peuvent vérifier instantanément l'authenticité d'un acte de naissance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi un registre numérique sécurisé ?</h2>
+                <p class="section-description">
+                    Les registres papier restent vulnérables à la perte, à la destruction et aux falsifications. Ces fragilités peuvent interrompre la continuité de l'état civil et compliquer la reconnaissance des droits des enfants.
+                </p>
+                <p class="section-description section-description-tight">
+                    Un registre numérique sécurisé permet de conserver des enregistrements durables, fiables et vérifiables dans le temps, y compris pour les territoires ruraux où la continuité administrative est plus difficile.
+                </p>
+            </div>
+
+            <div class="security-grid">
+                <div class="security-card slide-up">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="security-title">Immutabilité</h3>
+                    <p class="security-text">Un enregistrement validé ne peut pas être modifié ou falsifié.</p>
+                </div>
+
+                <div class="security-card slide-up delay-10">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"></path><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3 class="security-title">Lutte contre la fraude</h3>
+                    <p class="security-text">La solution limite les faux actes et les manipulations administratives.</p>
+                </div>
+
+                <div class="security-card slide-up delay-20">
+                    <div class="security-icon-wrapper">
+                        <svg class="security-icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </div>
+                    <h3 class="security-title">Résilience des archives</h3>
+                    <p class="security-text">Les enregistrements sont protégés contre la perte et la destruction des registres papier.</p>
+                </div>
+            </div>
+
+            <div class="security-commitment">
+                « NaissanceChain contribue à la mise en place d’un registre national numérique résistant à la perte, à la destruction et à la falsification des archives d’état civil. »
+            </div>
+        </div>
+    </section>
+
+    <!-- Users Section -->
+    <section id="users" class="section-white">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Une solution pour tout l'écosystème de l'état civil</h2>
+                <p class="section-description">
+                    NaissanceChain est conçu pour répondre aux besoins de tous les acteurs impliqués dans 
+                    l'enregistrement, la reconnaissance et la vérification des naissances.
+                </p>
+            </div>
+
+            <div class="users-grid">
+                <div class="user-card scale-up">
+                    <div class="user-icon gradient-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2a2 2 0 0 0-2 2v5H4a2 2 0 0 0-2 2v2c0 1.1.9 2 2 2h5v5c0 1.1.9 2 2 2h2a2 2 0 0 0 2-2v-5h5a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-5V4a2 2 0 0 0-2-2h-2z"></path></svg>
+                    </div>
+                    <h3 class="user-title">Agents de santé et d'état civil</h3>
+                </div>
+
+                <div class="user-card scale-up delay-10">
+                    <div class="user-icon gradient-indigo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3 class="user-title">Familles et tuteurs</h3>
+                </div>
+
+                <div class="user-card scale-up delay-20">
+                    <div class="user-icon gradient-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h3 class="user-title">Écoles et établissements de santé</h3>
+                </div>
+
+                <div class="user-card scale-up delay-30">
+                    <div class="user-icon gradient-violet">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M3 7v1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7m0 1a3 3 0 0 0 6 0V7"></path><path d="M3 7h18v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"></path><path d="M9 3v4"></path><path d="M15 3v4"></path></svg>
+                    </div>
+                    <h3 class="user-title">Administrations publiques</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="section-impact">
+        <div class="container-impact">
+            <div class="section-header">
+                <h2 class="section-title-white">Un impact durable pour la Guinée</h2>
+            </div>
+
+            <div class="impact-box">
+                <div class="impact-list">
+                    <div class="impact-item slide-left">
+                        <div class="impact-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <p class="impact-text">Inclusion juridique de 1,8 million d'enfants</p>
+                    </div>
+
+                    <div class="impact-item slide-left delay-10">
+                        <div class="impact-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <p class="impact-text">Amélioration de l'accès à l'éducation</p>
+                    </div>
+
+                    <div class="impact-item slide-left delay-20">
+                        <div class="impact-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <p class="impact-text">Meilleur accès aux soins de santé</p>
+                    </div>
+
+                    <div class="impact-item slide-left delay-30">
+                        <div class="impact-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <p class="impact-text">Réduction des inégalités territoriales</p>
+                    </div>
+
+                    <div class="impact-item slide-left delay-40">
+                        <div class="impact-check">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        </div>
+                        <p class="impact-text">Renforcement du système national d'état civil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mockups Section -->
+    <section id="mockups" class="section-gray">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Aperçu de la solution</h2>
+                <p class="section-description">
+                    Ces maquettes illustrent les parcours utilisateurs du système et démontrent son 
+                    fonctionnement dans des contextes à connectivité limitée.
+                </p>
+            </div>
+
+            <div class="mockups-grid">
+                <div class="mockup-card slide-up">
+                    <div class="mockup-iframe-wrapper">
+                        <iframe 
+                            src="https://trice-string-42575664.figma.site" 
+                            title="Agent de terrain"
+                            class="mockup-iframe"
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+                        </iframe>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 class="mockup-title">Agent de terrain</h3>
+                        <p class="mockup-description">
+                            Interface d'enregistrement des naissances destinée aux agents de santé et d'état civil.
+                        </p>
+                        <a href="https://trice-string-42575664.figma.site" target="_blank" rel="noopener noreferrer" class="mockup-link">
+                            <span>Ouvrir en plein écran</span>
+                            <svg class="mockup-link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mockup-card slide-up delay-10">
+                    <div class="mockup-iframe-wrapper">
+                        <iframe 
+                            src="https://foam-fairy-27167044.figma.site" 
+                            title="Portail de vérification"
+                            class="mockup-iframe"
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+                        </iframe>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 class="mockup-title">Portail de vérification</h3>
+                        <p class="mockup-description">
+                            Système de vérification des actes de naissance pour les écoles, hôpitaux et administrations.
+                        </p>
+                        <a href="https://foam-fairy-27167044.figma.site" target="_blank" rel="noopener noreferrer" class="mockup-link">
+                            <span>Ouvrir en plein écran</span>
+                            <svg class="mockup-link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mockup-card slide-up delay-20">
+                    <div class="mockup-iframe-wrapper">
+                        <iframe 
+                            src="https://ozone-coral-18497718.figma.site" 
+                            title="Écran famille"
+                            class="mockup-iframe"
+                            loading="lazy"
+                            referrerpolicy="no-referrer"
+                            sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+                        </iframe>
+                    </div>
+                    <div class="mockup-content">
+                        <h3 class="mockup-title">Écran famille</h3>
+                        <p class="mockup-description">
+                            Accès simplifié à une preuve numérique de l'existence légale de l'enfant.
+                        </p>
+                        <a href="https://ozone-coral-18497718.figma.site" target="_blank" rel="noopener noreferrer" class="mockup-link">
+                            <span>Ouvrir en plein écran</span>
+                            <svg class="mockup-link-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section-gray">
+        <div class="container-faq">
+            <div class="section-header">
+                <h2 class="section-title">Questions fréquentes</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item slide-up">
+                    <button id="faq-button-0" class="faq-button" onclick="toggleFAQ(0)" aria-expanded="true" aria-controls="faq-answer-0">
+                        <span class="faq-question">Pourquoi l'enregistrement des naissances est‑il un enjeu majeur en Guinée ?</span>
+                        <svg class="faq-chevron" id="faq-chevron-0" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-0" role="region" aria-labelledby="faq-button-0">
+                        <div class="faq-answer-content">
+                            L'absence d'acte de naissance empêche des millions d'enfants, en particulier dans les zones rurales et enclavées, d'accéder à l'éducation, aux soins de santé et à une reconnaissance juridique officielle. Elle limite également la capacité de l'État à planifier et mettre en œuvre des politiques publiques efficaces.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item slide-up delay-05">
+                    <button id="faq-button-1" class="faq-button" onclick="toggleFAQ(1)" aria-expanded="false" aria-controls="faq-answer-1">
+                        <span class="faq-question">À qui s'adresse la solution NaissanceChain ?</span>
+                        <svg class="faq-chevron" id="faq-chevron-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-button-1">
+                        <div class="faq-answer-content">
+                            NaissanceChain s’adresse aux agents de santé et d’état civil chargés de l’enregistrement des naissances, aux familles, ainsi qu’aux écoles, hôpitaux et administrations responsables de la vérification des actes de naissance.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item slide-up delay-10">
+                    <button id="faq-button-2" class="faq-button" onclick="toggleFAQ(2)" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span class="faq-question">Quel est l'objectif principal de NaissanceChain ?</span>
+                        <svg class="faq-chevron" id="faq-chevron-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-button-2">
+                        <div class="faq-answer-content">
+                            L’objectif principal de NaissanceChain est de faciliter l’enregistrement des naissances sur l’ensemble du territoire guinéen, y compris dans les zones rurales à faible connectivité, et de fournir une preuve numérique vérifiable de l’existence juridique de chaque enfant.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section-white">
+        <div class="container-team">
+            <div class="section-header">
+                <h2 class="section-title">Équipe GN‑01</h2>
+                <p class="section-description">
+                    Une équipe guinéenne pluridisciplinaire engagée dans la modernisation de l'état civil, 
+                    l'innovation numérique et l'inclusion sociale.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-title">NaissanceChain</p>
+                <p class="footer-subtitle">MIABE Hackathon 2026</p>
+                <p class="footer-text">Projet – Guinée</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-copyright">
+                <p>© 2026 NaissanceChain. Un projet pour l'inclusion juridique universelle.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Revenir en haut">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </button>
+
+    <script src="Js/naichain.js"></script>
+</body>
+</html>
