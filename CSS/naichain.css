@@ -720,7 +720,7 @@ section[id] {
 }
 
 .mockup-iframe-wrapper {
-    aspect-ratio: 49 / 100;
+    height: clamp(300px, 40vw, 420px);
     background: radial-gradient(circle at top, #f0f0f0 0%, #e5e5e5 48%, #d7d7d7 100%);
     overflow: hidden;
     border-bottom: 1px solid #e5e7eb;
@@ -731,8 +731,9 @@ section[id] {
 }
 
 .mockup-image {
-    width: 100%;
+    width: auto;
     height: 100%;
+    max-width: 100%;
     object-fit: contain;
     border-radius: 0.9rem;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
